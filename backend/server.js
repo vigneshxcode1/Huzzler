@@ -199,7 +199,7 @@ if (!rawMongoUri) {
   process.exit(1);
 }
 
-console.log("vicky")
+console.log("vicky new branch")
 
 mongoose
   .connect(rawMongoUri.trim()) // ✅ .trim() removes hidden spaces or newlines
