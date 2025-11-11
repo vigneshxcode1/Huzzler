@@ -199,6 +199,8 @@ if (!rawMongoUri) {
   process.exit(1);
 }
 
+console.log("vicky")
+
 mongoose
   .connect(rawMongoUri.trim()) // ✅ .trim() removes hidden spaces or newlines
   .then(() => {
@@ -206,5 +208,5 @@ mongoose
     app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
   .catch((err) => {
-    console.error("❌ MongoDB connection failed:", err.message);
+    console.error("MongoDB connection failed:", err.message);
   });
