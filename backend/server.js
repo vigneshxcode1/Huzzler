@@ -156,6 +156,7 @@ app.get(
 app.use("/api/auth", authRoutes);
 app.use("/api/portfolio", portfolioRoutes);
 app.use("/api/service", serviceRoutes);
+app.use();
 
 // =======================
 // 🧠 ENV VALIDATION
