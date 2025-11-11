@@ -1,6 +1,12 @@
 import mongoose from "mongoose";
 
 
-const profileModel = new mongoose.Schema({
-    
+const profileSchema = new mongoose.Schema({
+    Profilename:{
+        type:String,
+        required:true,
+    }
 })
+
+const ProfileModel = mongoose.model("profileModel",profileSchema)
+export default ProfileModel;
