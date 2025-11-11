@@ -5,6 +5,14 @@ const profileSchema = new mongoose.Schema({
     Profilename:{
         type:String,
         required:true,
+    },
+    dob:{
+        type:String,
+        required:true
+    },
+    contact:{
+        type:String,
+        required:true,
     }
 })
 
